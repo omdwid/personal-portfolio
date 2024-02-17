@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #0c0c1d;
+  color: lightgray;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.portflo {
+  position: sticky;
+  top: 0;
+  background-color: rgb(17, 17, 50);
+}
+
+.foot {
+  height: 200px;
+  width: 100%;
+}
+
+@mixin mobile {
+  @media (max-width: 1100px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}

@@ -1,0 +1,113 @@
+@import "/src/app.scss";
+
+.hero {
+  height: calc(100vh - 100px);
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+  .wrapper {
+    width: 70vw;
+    height: 100%;
+    margin: auto;
+
+    .textContainer {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+
+      @include mobile {
+        width: 100%;
+        justify-content: start;
+        gap: 20px;
+      }
+
+      h2{
+        font-size: 30px;
+        color: rebeccapurple;
+        letter-spacing: .4em;
+
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+
+      h1 {
+        font-size: 60px;
+
+        @include mobile {
+          font-size: 40px;
+        }
+      }
+
+      .buttons {
+        z-index: 1;
+
+        @include mobile {
+          display: flex;
+          gap: 10px;
+        }
+        button{
+          padding: 10px;
+          border: 1px solid white;
+          border-radius: 10px;
+          background-color: transparent;
+          color: white;
+          margin-right: 20px;
+          cursor: pointer;
+          font-weight: 300;
+          font-weight: bold;
+        }
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+
+      img {
+        width: 50px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .imageContainer {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @include mobile {
+      top: unset;
+      bottom: 0;
+      height: 50%;
+      margin: auto;
+    }    
+
+    img {
+      height: 100%;
+      width: 100%;
+      scale: 0.8;
+
+      @include mobile {
+        scale: 1;
+      }
+    }
+  }
+
+  .slidingTextContainer {
+    position: absolute;
+    bottom: -90px;
+    font-size: 50vh;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.061);
+    width: 90vw;
+  }
+
+
+}
