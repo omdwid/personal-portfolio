@@ -1,8 +1,33 @@
-# React + Vite
+# Personel Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Demo link:
 
-Currently, two official plugins are available:
+Access my site at [demo link](https://cute-yeot-8e7506.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Content:
+
+- [About The App](#about-the-app)
+- [Screenshots](#screenshots)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Approach](#approach)
+
+## About The App
+
+This is an app that showcases my project and skills as a developer
+
+## Screenshots
+
+## Technologies
+
+I used `React`, `scss`, `Vite`, `Framer Motion`
+
+## Setup
+
+- download or clone the repository
+- run `npm install`
+- run `npm run dev`
+
+## Approach
+
+I adopted the `scss` for style because of benefits like nested syntax and convenience
