@@ -14,7 +14,7 @@ const Portfolio = ({ project }) => {
           <h1>{project.title}</h1>
           <p>{project.description}</p>
           <div className="buttons">
-            <motion.button
+            {project.link && <motion.button
               whileHover={{
                 backgroundColor: "white",
                 color: "black",
@@ -22,7 +22,7 @@ const Portfolio = ({ project }) => {
               }}
             >
               <a href={project.link} target="_blank" rel="noopener noreferrer">Demo</a>
-            </motion.button>
+            </motion.button>}
             <motion.button
               whileHover={{
                 backgroundColor: "white",
